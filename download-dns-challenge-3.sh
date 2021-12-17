@@ -63,12 +63,14 @@ BLOB_NAMES=(
 
 AZURE_URL="https://dns3public.blob.core.windows.net/dns3archive"
 
-mkdir -p ./datasets ./datasets_fullband
-
 for BLOB in ${BLOB_NAMES[@]}
 do
     URL="$AZURE_URL/$BLOB"
     echo "Download: $BLOB"
+    # downloading the files, + unpack files into wav on the fly
+    curl "$URL" | tar fjxv -
+done
+
 
     # DRY RUN: print HTTP headers WITHOUT downloading the files
     # curl -s -I "$URL" | head -n 1
@@ -79,6 +81,5 @@ do
     # Same as above, but using wget
     # wget "$URL" -O "$BLOB"
 
-    # Same, + unpack files on the fly
-    curl "$URL" | tar fjxv -
-done
+    # downloading the files, + unpack files into wav on the fly
+
