@@ -58,7 +58,7 @@
 
 BLOB_NAMES=(
     datasets/datasets.clean.read_speech.tar.bz2
-    datasets/datasets.noise.tar.bz2
+    https://dns3public.blob.core.windows.net/dns3archive/datasets/datasets.noise.tar.bz2
 )
 
 AZURE_URL="https://dns3public.blob.core.windows.net/dns3archive"

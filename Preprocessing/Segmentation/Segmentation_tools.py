@@ -1,17 +1,10 @@
-import numpy as np
 import glob
-import shutil
-from pydub import AudioSegment, effects
-from pydub.utils import make_chunks
-import librosa
-import re
 import os
 import random
 import shutil
-from librosa import display
-from pathlib import Path
-import IPython.display as pd
-import matplotlib.pyplot as plt
+
+from pydub import AudioSegment
+from pydub.utils import make_chunks
 
 
 def move_random_files(source: str, dest: str, files_no: int, name_prefix: str):
