@@ -61,8 +61,6 @@ BLOB_NAMES=(
     datasets/datasets.noise.tar.bz2
 )
 
-###############################################################
-
 AZURE_URL="https://dns3public.blob.core.windows.net/dns3archive"
 
 mkdir -p ./datasets ./datasets_fullband
