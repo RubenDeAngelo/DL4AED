@@ -1,0 +1,7 @@
+TODO:
+
+-> calculate rms of speech with threshold and calculate avarage
+-> calculate rms of noise with threshold
+-> adjust rms of noise to avarage of speech rms
+-> adjust rms of noise with gauß
+-> merge noise and speech and check clipping
