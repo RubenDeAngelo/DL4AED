@@ -1,1 +1,0 @@
-#Hier werden später normalisierung, fusion von noise and speech, rms threshhold
